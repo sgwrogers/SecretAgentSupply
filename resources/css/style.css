@@ -128,7 +128,6 @@ span a {
 }
 
 .catalogue {
-  border: 1px solid yellow;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -136,18 +135,20 @@ span a {
 }
 
 .item {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  display: block;
   border: 4px solid black;
-  width: 20rem;
-  height: 20rem;
+  width: 20%;
+}
+
+.item-image {
+  text-align: center;
+  padding: 2rem;
 }
 
 .item img {
   height: 9rem;
   width: auto;
+  align-self: center;
 }
 
 /* First attempt
@@ -166,21 +167,21 @@ span a {
 */
 
 #glasses {
-  width: 50%;
+  margin: 2.4rem auto;
+  width: 70%;
   height: auto;
-  margin: 0 auto;
 }
 
-.item span {
-  display: block;
+.item-desc {
   background-color: black;
   color: white;
-  width: 100%;
   height: 2rem;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
   text-align: center;
 }
+
+/* Contact and Location */
 
 .contact {
   display: flex;
