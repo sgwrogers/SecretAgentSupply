@@ -46,7 +46,7 @@ header {
 
 .blackbox {
   background-color: black;
-  width: 20rem;
+  width: 30%;
   height: auto;
   margin-top: 9rem;
   margin-left: 5rem;
@@ -73,7 +73,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: firebrick;
-  height: 2.5rem;
+  height: 3rem;
 }
 
 span a {
@@ -81,8 +81,8 @@ span a {
   text-decoration: none;
 }
 
-/* Cataglogue */
-.catalogue {
+/* Cataglogue First Attempt */
+/*.catalogue {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -119,4 +119,105 @@ span a {
   width: 100%;
   text-align: center;
   padding: 0.5rem 0;
+} */
+
+/* Catalogue Second attempt */
+
+.whitespace {
+  background-color: white;
+}
+
+.catalogue {
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  border: 4px solid black;
+  width: 20rem;
+  height: 20rem;
+}
+
+.item img {
+  height: 9rem;
+  width: auto;
+}
+
+/* First attempt
+.item-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.item img {
+  height: 9rem;
+  width: auto;
+}
+
+*/
+
+#glasses {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.item span {
+  display: block;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.small-box {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 35%;
+  height: 5rem;
+}
+
+.location p {
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.gridref {
+  background-color: white;
+  color: black;
+  padding-top: 0.25rem;
+}
+
+
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  height: 5rem
+}
+
+footer p {
+    margin-left: 5rem;
 }
