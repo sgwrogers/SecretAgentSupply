@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 960px;
+  flex-basis: 960px;
   margin-left: 5rem;
 }
 
@@ -50,6 +50,7 @@ header {
   height: auto;
   margin-top: 9rem;
   margin-left: 5rem;
+  padding-right: 1rem;
 }
 
 .blackbox h3 {
@@ -74,6 +75,10 @@ nav {
   align-items: center;
   background-color: firebrick;
   height: 3rem;
+}
+
+nav select {
+  display: none;
 }
 
 span a {
@@ -166,6 +171,12 @@ span a {
 
 */
 
+.item-glasses {
+  display: block;
+  border: 4px solid black;
+  width: 20%;
+}
+
 #glasses {
   margin: 2.4rem auto;
   width: 70%;
@@ -203,7 +214,7 @@ span a {
 
 .gridref {
   background-color: white;
-  color: black;
+  color: black;-
   padding-top: 0.25rem;
 }
 
@@ -221,4 +232,49 @@ footer {
 
 footer p {
     margin-left: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+.logo {
+  margin-left: 0.75rem;
+}
+
+.blackbox {
+  width: 40%;
+  margin-left: 0;
+  padding-right: 2rem;
+}
+
+nav span {
+  display: none;
+}
+  nav select {
+  display: inline-block;
+  background-color: firebrick;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px; /*dropdown arrow still removed if this is code and one below is erased - maybe for different browser */
+  text-overflow: '';
+}
+
+.catalogue {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  width: 40%;
+}
+
+.item-glasses {
+    display: none;
+  }
+
+.small-box {
+  width: 40%;
 }
